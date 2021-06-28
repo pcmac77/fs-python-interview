@@ -11,8 +11,10 @@ def fibonacci(n):
 
 # Test code below
 import time
-for x in [7, 10, 20, 30, 40]:
+answer_dict = dict([(7, 13), (10, 55), (20, 6765), (30, 832040), (40, 102334155)])
+for k,v in answer_dict.items():
   t0=time.time()
-  print("fibonacci({})={}".format(x, fibonacci(x)))
+  print("fibonacci({})={}".format(k, fibonacci(k)))
+  assert fibonacci(k) == v
   print("Took {} seconds".format(time.time()-t0))
 print("---Done with fibonacci")
