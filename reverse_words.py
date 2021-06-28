@@ -12,3 +12,6 @@ def reverse_words(input):
 
 input="This is an example"
 print(reverse_words(input))
+
+assert reverse_words("This is an example!") == "sihT si na !elpmaxe"
+assert reverse_words("double  spaces") == "elbuod  secaps"
