@@ -15,3 +15,4 @@ print(reverse_words(input))
 
 assert reverse_words("This is an example!") == "sihT si na !elpmaxe"
 assert reverse_words("double  spaces") == "elbuod  secaps"
+assert reverse_words("tripple   spaces") == "elppirt   secaps"
